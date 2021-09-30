@@ -1,0 +1,16 @@
+GET http://127.0.0.1:5000/messages
+
+###
+
+GET http://127.0.0.1:5000/messages/ef30ff8c-a92c-47c2-b525-3ca0d8b708f0
+
+###
+
+POST http://127.0.0.1:5000/messages
+Content-Type: application/json
+
+{
+  "firstName": "Texter777",
+  "text": "Imposible is nothing",
+  "email": "test777@test.test"
+}
