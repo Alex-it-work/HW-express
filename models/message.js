@@ -56,6 +56,18 @@ class Message {
       return null
     }
   }
+  static deleteMessage = messageId => {
+    const deletedMessageIndex = Message.messages.findIndex(
+      message => message.id === messageId
+    )
+
+    if (deletedMessageIndex !== -1) {
+      const deletedMessage = Message.messages.splice(deletedMessageIndex, 1)
+      return deletedMessage
+    } else {
+      return null
+    }
+  }
 }
 
 module.exports = Message

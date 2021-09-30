@@ -39,4 +39,14 @@ module.exports.updateMessage = (req, res) => {
     : res.status(404).send('Not found')
 }
 
-module.exports.deleteMessage = (req, res) => {}
+module.exports.deleteMessage = (req, res) => {
+  const {
+    params: { messageId }
+  } = req
+
+  const deletedMessage = Message.deleteMessage(messageId)
+
+  deletedMessage
+    ? res.status(200).send(deletedMessage)
+    : res.status(404).send('Not found')
+}

@@ -25,3 +25,7 @@ Content-Type: application/json
   "text": "Imp",
   "email": "test707@test.test",
 }
+
+###
+
+DELETE http://localhost:5000/messages/ef30ff8c-a92c-47c2-b525-3ca0d8b708f0
