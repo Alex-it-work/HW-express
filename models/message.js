@@ -23,7 +23,7 @@ const messagesDb = [
     text:
       'Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia primis non, morbi mattis in ut. Quam nisl class potenti interdum nostra eros parturient, nec placerat pharetra non montes neque erat, eget platea accumsan laoreet sollicitudin cubilia. Donec proin est vivamus maximus auctor condimentum sapien commodo lacus orci, mus tempor nullam faucibus eu sodales adipiscing hac sollicitudin, curae viverra elementum ad congue consequat purus nec vestibulum.',
     email: 'test3@test.test',
-    date: new Date(2019, 11, 30)
+    date: new Date(2019, 11, 29)
   }
 ]
 
@@ -40,6 +40,21 @@ class Message {
     const createdMessage = { ...body, id: uuidv4(), date: new Date() }
     Message.messages.push(createdMessage)
     return Message.messages[Message.messages.length - 1]
+  }
+  static updateMessage = (body, messageId) => {
+    const updatedMessageIndex = Message.messages.findIndex(
+      message => message.id === messageId
+    )
+
+    if (updatedMessageIndex !== -1) {
+      const updatedMessage = { ...body, id: messageId }
+
+      Message.messages.splice(updatedMessageIndex, 1, updatedMessage)
+
+      return updatedMessage
+    } else {
+      return null
+    }
   }
 }
 

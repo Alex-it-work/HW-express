@@ -14,3 +14,14 @@ Content-Type: application/json
   "text": "Imposible is nothing",
   "email": "test777@test.test",
 }
+
+###
+
+PATCH http://localhost:5000/messages/ef30ff8c-a92c-47c2-b525-3ca0d8b708f0
+Content-Type: application/json
+
+{
+  "firstName": "Texter707",
+  "text": "Imp",
+  "email": "test707@test.test",
+}
