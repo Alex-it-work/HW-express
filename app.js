@@ -12,8 +12,8 @@ app.post(
   validate.validateMessage,
   messagesController.createMessage
 )
-app.patch('/messages/1', messagesController.updateMessage)
-app.delete('/messages/1', messagesController.deleteMessage)
+app.patch('/messages/:messageId', messagesController.updateMessage)
+app.delete('/messages/:messageId', messagesController.deleteMessage)
 
 app.use((err, req, res, next) => {
   res.status(500).send(err)

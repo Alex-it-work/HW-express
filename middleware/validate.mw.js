@@ -19,10 +19,7 @@ module.exports.validateMessage = async (req, res, next) => {
       .string()
       .email()
       .required(),
-    date: yup
-      .date()
-      .max(new Date())
-      .required()
+    date: yup.date().max(new Date())
   })
 
   try {
