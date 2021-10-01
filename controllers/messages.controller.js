@@ -29,10 +29,11 @@ module.exports.createMessage = (req, res) => {
 
 module.exports.updateMessage = (req, res) => {
   const {
-    params: { messageId }
+    params: { messageId },
+    body
   } = req
 
-  const updatedMessage = Message.updateMessage(req.body, messageId)
+  const updatedMessage = Message.updateMessage(body, messageId)
 
   updatedMessage
     ? res.status(201).send(updatedMessage)

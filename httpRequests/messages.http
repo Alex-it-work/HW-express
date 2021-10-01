@@ -17,7 +17,7 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:5000/messages/cd8834c5-d9a6-4c1b-a236-b8a61703dda8
+PATCH http://localhost:5000/messages/1
 Content-Type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5000/messages/cd8834c5-d9a6-4c1b-a236-b8a61703dda8
+DELETE http://localhost:5000/messages/1
