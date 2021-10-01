@@ -12,7 +12,7 @@ Content-Type: application/json
 {
   "firstName": "Texter777",
   "text": "Imposible is nothing",
-  "email": "test777@test.test",
+  "email": "test777@test.test"
 }
 
 ###
@@ -23,7 +23,7 @@ Content-Type: application/json
 {
   "firstName": "Texter707",
   "text": "Imp",
-  "email": "test707@test.test",
+  "email": "test707@test.test"
 }
 
 ###
