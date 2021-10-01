@@ -2,7 +2,7 @@ GET http://127.0.0.1:5000/messages
 
 ###
 
-GET http://127.0.0.1:5000/messages/ef30ff8c-a92c-47c2-b525-3ca0d8b708f0
+GET http://127.0.0.1:5000/messages/cd8834c5-d9a6-4c1b-a236-b8a61703dda8
 
 ###
 
@@ -17,7 +17,7 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:5000/messages/ef30ff8c-a92c-47c2-b525-3ca0d8b708f0
+PATCH http://localhost:5000/messages/cd8834c5-d9a6-4c1b-a236-b8a61703dda8
 Content-Type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:5000/messages/ef30ff8c-a92c-47c2-b525-3ca0d8b708f0
+DELETE http://localhost:5000/messages/cd8834c5-d9a6-4c1b-a236-b8a61703dda8
