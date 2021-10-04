@@ -47,7 +47,10 @@ class Message {
     )
 
     if (updatedMessageIndex !== -1) {
-      const updatedMessage = { ...body, id: messageId }
+      const updatedMessage = {
+        ...Message.messages[updatedMessageIndex],
+        ...body
+      }
 
       Message.messages.splice(updatedMessageIndex, 1, updatedMessage)
 
